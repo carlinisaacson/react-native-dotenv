@@ -15,19 +15,31 @@ Whitespace conventions:
 - 1 spaces before normal text
  -->
 
+## [0.2.0] - 2018-7-17
+
+### Fixed
+
+- Compatibility with RN 0.56 (Babel 7) (#42)
+
+## [0.1.1] - 2018-1-14
+
+### Fixed
+
+- Empty env is treated as env not found. (#25)
+
 ## [0.1.0] - 2017-7-9
 
-## Fixed
+### Fixed
 
 - Compatibility with RN 0.46+ (#21)
 
-## Added
+### Added
 
 - Add filename config to allow user to custom filename of .env file (#16)
 
 ## [0.0.4] - 2017-4-4
 
-## Fixed
+### Fixed
 
 - Misleading not found errors is shown (#14)
 

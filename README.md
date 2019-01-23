@@ -14,6 +14,14 @@ $ npm install react-native-dotenv --save-dev
 
 Add the `react-native-dotenv` preset to your **.babelrc** file at the project root.
 
+### RN (0.56+) (Babel 7)
+```json
+{
+  "presets": ["react-native", "module:react-native-dotenv"]
+}
+```
+
+### RN (<0.56)
 ```json
 {
   "presets": ["react-native", "react-native-dotenv"]
@@ -43,7 +51,7 @@ import { API_KEY, ANOTHER_CONFIG } from 'react-native-dotenv'
 ApiClient.init(API_KEY, ANOTHER_CONFIG)
 ```
 
-## How does it works?
+## How does it work?
 
 As you can see, it's implemented as a babel plugin. All referenced imported members are replaced as the values specified in the **.env** file.
 
